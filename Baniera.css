@@ -89,7 +89,7 @@ header ul
     list-style: none;
     top: 0px;
     z-index: 0;
-    position: relative;
+    position: absolute;
     width: 100%;
     height:800px;
     overflow: hidden;
@@ -180,4 +180,134 @@ header .menu-btn:checked ~ .menu-icon .nav:after {
 header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:before,
 header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
   top: 0;
+}
+
+.first_slideshow{
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(92, 140, 196);
+}
+
+.slide.first{
+    width: 100%;
+    height: 100%;
+    background-image: url('pexels-photo-3315291.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    animation: slideBg 10s linear infinite 4s;
+    animation-timing-function: linear;
+}
+@keyframes slideBg{
+    25%{
+        background-image: url('pexels-photo-3315291.jpeg');
+    }
+
+    90%{
+        background-image: url('pexels-photo-2134224.jpeg');
+    }
+}
+/* .slide.second{
+    background-image: url('pexels-photo-2134224.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(92, 140, 196);
+} */
+
+.second_slideshow{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(92, 140, 196);
+}
+.third_slideshow{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(92, 140, 196);
+}
+.fourth_slideshow{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(92, 140, 196);
+}
+.slider.first{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+.slider.first p{
+    color: #19587D;
+    padding: 0px 35px;
+}
+.slider.first h2{
+    transform: none;
+    left: 0px;
+    position: relative;
+    padding: 20px 35px 0px 35px;
+}
+.slidescroll{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slidescroll.container{
+    width: 80%;
+    height: 90%;
+    background: white;
+    position: absolute;
+}
+
+h2{
+    font-family: 'montserrat alternates';
+    color: #222C4E;
+    font-weight: bold;
+    font-size: 30px;
+    transform: rotate(-90deg);
+    z-index: 20;
+    left: -200px;
+    position: relative;
+    animation-name: title;
+    animation-delay: 0s;
+    animation-duration: 6s;
+
+}
+
+@keyframes title{
+    0%{
+        position: absolute;
+        top: -3rem;
+        opacity: 1;
+    }
+    75%{
+        position: absolute;
+        top: 45%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+h3{
+    font-family: 'montserrat';
+}
+
+p{
+    font-family: 'raleway';
+    color: white;
+}
+.baniera_storytelling p{
+    color: black;
+}
+.second_slideshow{
+    background-color: #19587D;
 }
