@@ -9,6 +9,7 @@
 
 * {
     margin: 0px;
+    box-sizing: border-box;
   }
 
 h1{
@@ -67,14 +68,14 @@ header{
 
 .searchbar i{
     position: absolute;
-    left: -8%;
-    top: 30%;
+    left: 5%;
+    top: 20%;
     color:grey;
 }
 .searchbar{
     position: absolute;
     width: 75%;
-    height: 60%;
+    height: 100%;
     right: 0%;
 }
 .secondnav{
@@ -219,25 +220,32 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
 } */
 
 .second_slideshow{
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-color: rgb(92, 140, 196);
+    margin: 95px 0px;
 }
 .third_slideshow{
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-color: rgb(92, 140, 196);
+    margin: 95px 0px;
 }
 .fourth_slideshow{
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-color: rgb(92, 140, 196);
+    margin: 95px 0px;
 }
 .slider.first{
     width: 100%;
-    height: 60vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    margin: 95px 0px;
+    position: relative;
+    background-color: #FCCA56;
 }
 .slider.first p{
     color: #19587D;
@@ -249,22 +257,77 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     position: relative;
     padding: 20px 35px 0px 35px;
 }
-.slidescroll{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
+.sliderscroll{
+    width: 90%;
+    height: 21vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    top: 105%;
+    left: 10%;
+    position: absolute;
+}
+
+.sliderscroll::-webkit-scrollbar {
+    width:  2px;
+    height: 5px;
+  }
+.sliderscroll::-webkit-scrollbar-thumb {
+    background: #343434;
+    border-radius: 10px;
+  }
+.sliderscroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sliderscroll > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: left;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
+    font-size: 100px;
+  }
 
-.slidescroll.container{
-    width: 80%;
-    height: 90%;
-    background: white;
-    position: absolute;
-}
+.slidescroll.first
+ {
+    background-image: url('photo-1600566752355-35792bedcfea.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.second
+ {
+    background-image: url('photo-1507652313519-d4e9174996dd.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.third
+ {
+    background-image: url('photo-1558211583-ecfebb03748b.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.fourth
+ {
+    background-image: url('photo-1599603780100-9a9e42b0489f.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+
+
 
 h2{
     font-family: 'montserrat alternates';
@@ -275,9 +338,9 @@ h2{
     z-index: 20;
     left: -200px;
     position: relative;
-    animation-name: title;
+    /* animation-name: title;
     animation-delay: 0s;
-    animation-duration: 6s;
+    animation-duration: 6s; */
 
 }
 
