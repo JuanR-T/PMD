@@ -326,6 +326,12 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     background-size: cover;
     object-fit: cover;
  }
+ .slidescroll.fourth
+ {
+    background-image: url('photo-1599603780100-9a9e42b0489f.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
 
 
 
