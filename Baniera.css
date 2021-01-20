@@ -192,21 +192,23 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
 .slide.first{
     width: 100%;
     height: 100%;
-    background-image: url('pexels-photo-3315291.jpeg');
+    background-image: url('/Images/pexels-victoria-borodinova-3315291.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     backface-visibility: hidden;
-    animation: slideBg 10s linear infinite 4s;
+    animation: slideBg 15s linear infinite 4s;
     animation-timing-function: linear;
 }
 @keyframes slideBg{
     25%{
-        background-image: url('pexels-photo-3315291.jpeg');
+        background-image: url('/Images/pexels-victoria-borodinova-3315291.jpg');
     }
-
+    50%{
+        background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
+    }
     90%{
-        background-image: url('pexels-photo-2134224.jpeg');
+        background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
     }
 }
 /* .slide.second{
@@ -231,10 +233,40 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     background-color: rgb(92, 140, 196);
     margin: 95px 0px;
 }
+.blog{
+    height: 500px;
+    width: 100%;
+    background-color: #19587D;
+    margin: 95px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+.blogimage
+{
+    background-image: url('/Images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg');
+    height: 60%;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog article{
+    height: 40%;
+    width: 100%;
+}
+.blog button{
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
 .fourth_slideshow{
     height: 300px;
     width: 100%;
-    background-color: rgb(92, 140, 196);
+    background-color: rgb(129, 165, 206);
     margin: 95px 0px;
 }
 .slider.first{
@@ -304,37 +336,152 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
 
 .slidescroll.first
  {
-    background-image: url('photo-1600566752355-35792bedcfea.jpg');
+    background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
  }
  .slidescroll.second
  {
-    background-image: url('photo-1507652313519-d4e9174996dd.jpg');
+    background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
  }
  .slidescroll.third
  {
-    background-image: url('photo-1558211583-ecfebb03748b.jpg');
+    background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
  }
  .slidescroll.fourth
  {
-    background-image: url('photo-1599603780100-9a9e42b0489f.jpg');
+    background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
  }
- .slidescroll.fourth
+                                                                    /* Slider second */
+
+
+.sliderscroll.second{
+    width: 90%;
+    height: 21vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    top: 158%;
+    left: 10%;
+    position: absolute;
+}   
+
+.slidescroll.second.first
  {
-    background-image: url('photo-1599603780100-9a9e42b0489f.jpg');
+    background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
  }
+ .slidescroll.second.second
+ {
+    background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.second.third
+ {
+    background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.second.fourth
+ {
+    background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ 
+                                                                /* Slider third */
 
+.sliderscroll.third{
+    width: 90%;
+    height: 21vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    top: 205%;
+    left: 10%;
+    position: absolute;
+}   
 
+.slidescroll.third.first
+ {
+    background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.third.second
+ {
+    background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.third.third
+ {
+    background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ .slidescroll.third.fourth
+ {
+    background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
+    background-size: cover;
+    object-fit: cover;
+ }
+ 
+                                                                    /* Slider fourth */
 
+.sliderscroll.fourth{
+      width: 90%;
+      height: 21vh;
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      top: 300%;
+      left: 10%;
+      position: absolute;
+}   
+  
+.slidescroll.fourth.first
+   {
+      background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
+      background-size: cover;
+      object-fit: cover;
+   }
+.slidescroll.fourth.second
+   {
+      background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
+      background-size: cover;
+      object-fit: cover;
+   }
+.slidescroll.fourth.third
+{
+      background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
+      background-size: cover;
+       object-fit: coverfourth.slidescroll.fourth.fourth
+}
+.slidescroll.fourth.fourth
+   {
+      background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
+      background-size: cover;
+      object-fit: cover;
+}
+                                                                    
 h2{
     font-family: 'montserrat alternates';
     color: #222C4E;
@@ -368,15 +515,66 @@ h2{
 
 h3{
     font-family: 'montserrat';
+    text-align: center;
+    margin: 0px 20px;
 }
 
 p{
     font-family: 'raleway';
     color: white;
+    font-size: 15px;
+    margin: 10px 20px;
+}
+
+button{
+    border-radius: 8px;
+    border-style: none ;
+    outline-style: none;
+    height: 30px;
+    width: auto;
+    background-color: #FCCA56;
+    font-family: 'montserrat';
+    font-weight: bold;
+    color: #343434;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+  }
+
+.date{
+    margin: 0px 20px;
 }
 .baniera_storytelling p{
     color: black;
 }
 .second_slideshow{
     background-color: #19587D;
+}
+
+.back_to_top_button{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+.back_to_top_button button{
+    position: absolute;
+    top: 20%;
+    transform: translateY(-20%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    
 }
