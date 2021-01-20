@@ -182,16 +182,15 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:before,
 header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
   top: 0;
 }
-
+                                                    /* Slideshow */
 .first_slideshow{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
-    background-color: rgb(92, 140, 196);
 }
 
 .slide.first{
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background-image: url('/Images/pexels-victoria-borodinova-3315291.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,28 +210,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
         background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
     }
 }
-/* .slide.second{
-    background-image: url('pexels-photo-2134224.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(92, 140, 196);
-} */
 
-.second_slideshow{
-    height: 300px;
-    width: 100%;
-    background-color: rgb(92, 140, 196);
-    margin: 95px 0px;
-}
-.third_slideshow{
-    height: 300px;
-    width: 100%;
-    background-color: rgb(92, 140, 196);
-    margin: 95px 0px;
-}
+
 .blog{
     height: 500px;
     width: 100%;
@@ -262,45 +241,65 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     transform: translate(-50%);
     position: absolute;
 }
-
-.fourth_slideshow{
-    height: 300px;
-    width: 100%;
-    background-color: rgb(129, 165, 206);
-    margin: 95px 0px;
+.blog article p{
+    margin-bottom: 1px;
 }
+.blog article h3{
+    color: white;
+}
+.second_slideshow article h3{
+    margin-top: 5px;
+    color: white;
+}
+
+
+                                                        /* First slider */
 .slider.first{
     width: 100%;
-    height: 30vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     margin: 95px 0px;
     position: relative;
+}
+.slider.first .background{
+    height: 100%;
+    width: 100%;
     background-color: #FCCA56;
+    position: relative;
+  
+}
+.slider.first .title{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    margin: 150px 0px 0px 0px;
 }
 .slider.first p{
     color: #19587D;
-    padding: 0px 35px;
+    position: absolute;
+    margin-left: 35px;
+    top: 20%;
 }
-.slider.first h2{
-    transform: none;
-    left: 0px;
-    position: relative;
-    padding: 20px 35px 0px 35px;
+.slider.first h3{
+    
+    position: absolute;
+    margin-left: 35px;
 }
-.sliderscroll{
-    width: 90%;
-    height: 21vh;
+.sliderscroll.first{
+    width: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    top: 105%;
-    left: 10%;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .sliderscroll::-webkit-scrollbar {
@@ -315,7 +314,26 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     background: transparent;
   }
 
-  .sliderscroll > div {
+  .sliderscroll.first > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: left;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  .sliderscroll.third > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 150px;
@@ -327,14 +345,32 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-    
+  
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;
   }
+.sliderscroll.fourth > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: left;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
 
-.slidescroll.first
+.slidescroll.first.first
  {
     background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
     background-size: cover;
@@ -362,7 +398,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
 
 
 .sliderscroll.second{
-    width: 90%;
+    width: 100%;
     height: 21vh;
     display: flex;
     align-items: center;
@@ -370,10 +406,34 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    top: 158%;
-    left: 10%;
+    right: 0px;
+    bottom: 10px;
     position: absolute;
-}   
+}
+
+.second_slideshow{
+    background-color: #19587D;
+    position: relative;
+    height: 340px;
+}
+
+.sliderscroll.second > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    transform-origin: left;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
 
 .slidescroll.second.first
  {
@@ -411,11 +471,23 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    top: 205%;
-    left: 10%;
     position: absolute;
+    bottom: -80px;
+    right: 0px;
 }   
-
+.third_slideshow{
+    height: 150px;
+    width: 100%;
+    background-color: #FCCA56;
+    margin: 95px 0px;
+    position: relative;
+}
+.third_slideshow h3{
+    position: absolute;
+    top: 20px;
+    margin-left: 70px;
+    color: #343434;
+}
 .slidescroll.third.first
  {
     background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
@@ -442,8 +514,22 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
  }
  
                                                                     /* Slider fourth */
-
-.sliderscroll.fourth{
+                                                                    
+                                                                    
+    .fourth_slideshow{
+        height: 150px;
+        width: 100%;
+        background-color: #FCCA56;
+        margin: 95px 0px;
+        position: relative;
+    }
+    .fourth_slideshow h3{
+        position: absolute;
+        top: 20px;
+        margin-left: 40px;
+        color: #343434;
+    }
+    .sliderscroll.fourth{
       width: 90%;
       height: 21vh;
       display: flex;
@@ -452,11 +538,10 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
-      top: 300%;
-      left: 10%;
+      bottom: -80px;
+      right: 0px;
       position: absolute;
-}   
-  
+    }   
 .slidescroll.fourth.first
    {
       background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
@@ -487,29 +572,24 @@ h2{
     color: #222C4E;
     font-weight: bold;
     font-size: 30px;
-    transform: rotate(-90deg);
     z-index: 20;
-    left: -200px;
+    left: 0px;
+    top: -70px;
     position: relative;
-    /* animation-name: title;
+    animation-name: title;
     animation-delay: 0s;
-    animation-duration: 6s; */
-
+    animation-duration: 6s;
 }
 
 @keyframes title{
     0%{
-        position: absolute;
-        top: -3rem;
-        opacity: 1;
-    }
-    75%{
-        position: absolute;
-        top: 45%;
-        opacity: 1;
-    }
-    100%{
         opacity: 0;
+        transform: translateY(-20px)
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -523,7 +603,8 @@ p{
     font-family: 'raleway';
     color: white;
     font-size: 15px;
-    margin: 10px 20px;
+    margin: 10px 25px;
+    text-align: justify;
 }
 
 button{
@@ -555,8 +636,13 @@ button:hover {
 .baniera_storytelling p{
     color: black;
 }
-.second_slideshow{
-    background-color: #19587D;
+.baniera_storytelling h3{
+    color: #19587D;
+}
+
+.second_slideshow article{
+    position: absolute;
+    top: 0px;
 }
 
 .back_to_top_button{
@@ -576,5 +662,31 @@ button:hover {
 footer{
     display: flex;
     flex-direction: column;
-    
+    background-color: #19587D;
+}
+
+summary{
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+}
+details{
+    margin: 15px 15px;
+    padding: 10px;
+    border-top: white solid 1px;
+    outline-style: none;
+}
+details[open] {
+    padding: .5em;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 10px;
+    font-family: 'montserrat';
 }
