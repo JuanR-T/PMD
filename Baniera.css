@@ -9,6 +9,7 @@
 
 * {
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
   }
 
@@ -31,6 +32,7 @@ header{
     position: absolute;
     right: 0px;
     display: flex;
+    top: 10px;
 }
 .icons i{
     padding: 0px 10px;
@@ -41,7 +43,7 @@ header{
     height: 60px;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
 }
 
@@ -49,7 +51,7 @@ header{
     height: 20%;
     width: 100%;
     position: absolute;
-    bottom: 55%;
+    bottom: 0%;
 }
 
 .searchbar input{
@@ -82,6 +84,7 @@ header{
     display: flex;
     width: 100%;
     position: relative;
+    padding-top: 11px;
 }
 header ul 
 {
@@ -288,7 +291,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     position: absolute;
     margin-left: 35px;
 }
-.sliderscroll.first{
+.slidescontainer.first{
     width: 100%;
     height: 80%;
     display: flex;
@@ -302,26 +305,26 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     transform: translateY(-50%);
 }
 
-.sliderscroll::-webkit-scrollbar {
+.slidescontainer::-webkit-scrollbar {
     width:  2px;
     height: 5px;
   }
-.sliderscroll::-webkit-scrollbar-thumb {
+.slidescontainer::-webkit-scrollbar-thumb {
     background: #343434;
     border-radius: 10px;
   }
-.sliderscroll::-webkit-scrollbar-track {
+.slidescontainer::-webkit-scrollbar-track {
     background: transparent;
   }
 
-  .sliderscroll.first > div {
+  .slidescontainer.first > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 100%;
     height: 100%;
     margin: 0px 10px;
     border-radius: 10px;
-    background: #eee;
+
     transform-origin: left;
     transform: scale(1);
     transition: transform 0.5s;
@@ -333,7 +336,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     font-size: 100px;
   }
   
-  .sliderscroll.third > div {
+  .slidescontainer.third > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 150px;
@@ -351,7 +354,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     align-items: center;
     font-size: 100px;
   }
-.sliderscroll.fourth > div {
+.slidescontainer.fourth > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 150px;
@@ -370,34 +373,38 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     font-size: 100px;
 }
 
-.slidescroll.first.first
+.slides.first.first
  {
     background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
     background-size: cover;
+    background-position: center;
     object-fit: cover;
  }
- .slidescroll.second
+ .slides.second
  {
     background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.third
+ .slides.third
  {
     background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.fourth
+ .slides.fourth
  {
     background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
                                                                     /* Slider second */
 
 
-.sliderscroll.second{
+.slidescontainer.second{
     width: 100%;
     height: 21vh;
     display: flex;
@@ -417,7 +424,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     height: 340px;
 }
 
-.sliderscroll.second > div {
+.slidescontainer.second > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 150px;
@@ -435,34 +442,38 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     font-size: 100px;
   }
 
-.slidescroll.second.first
+.slides.second.first
  {
     background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.second.second
+ .slides.second.second
  {
     background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.second.third
+ .slides.second.third
  {
     background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.second.fourth
+ .slides.second.fourth
  {
     background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
  
                                                                 /* Slider third */
 
-.sliderscroll.third{
+.slidescontainer.third{
     width: 90%;
     height: 21vh;
     display: flex;
@@ -488,29 +499,33 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     margin-left: 70px;
     color: #343434;
 }
-.slidescroll.third.first
+.slides.third.first
  {
     background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.third.second
+ .slides.third.second
  {
     background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.third.third
+ .slides.third.third
  {
     background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
- .slidescroll.third.fourth
+ .slides.third.fourth
  {
     background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
+    background-position: center;
  }
  
                                                                     /* Slider fourth */
@@ -529,7 +544,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
         margin-left: 40px;
         color: #343434;
     }
-    .sliderscroll.fourth{
+    .slidescontainer.fourth{
       width: 90%;
       height: 21vh;
       display: flex;
@@ -542,29 +557,33 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
       right: 0px;
       position: absolute;
     }   
-.slidescroll.fourth.first
+.slides.fourth.first
    {
       background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
       background-size: cover;
       object-fit: cover;
+      background-position: center;
    }
-.slidescroll.fourth.second
+.slides.fourth.second
    {
       background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
       background-size: cover;
       object-fit: cover;
+      background-position: center;
    }
-.slidescroll.fourth.third
+.slides.fourth.third
 {
       background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
       background-size: cover;
-       object-fit: coverfourth.slidescroll.fourth.fourth
+      object-fit: cover;
+      background-position: center;
 }
-.slidescroll.fourth.fourth
+.slides.fourth.fourth
    {
       background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
       background-size: cover;
       object-fit: cover;
+      background-position: center;
 }
                                                                     
 h2{
@@ -624,11 +643,7 @@ button{
     transform: translateX(-50%);
     position: absolute;
 }
-button:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-  }
+
 
 .date{
     margin: 0px 20px;
@@ -689,4 +704,221 @@ ul{
 li{
     padding: 10px;
     font-family: 'montserrat';
+}
+
+
+@media (max-width:767px){
+    .desktopnav{
+        display: none;
+    }
+    .searchbardesktop{
+        display: none;
+    }
+}
+
+                                                                /* Media Query min 768px */
+@media (min-width:768px){
+    header{
+        display: flex;
+    }
+    .firstnav{
+        display: flex;
+        flex-direction: row;
+    }
+    .searchbardesktop{
+        height: 20px;
+        width: 30%;
+        right: 20%;
+        top: 15%;
+        position: absolute;
+    }
+    .searchbardesktop input{
+        bottom: 0%;
+        position: absolute;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-family: 'raleway';
+        font-size: 17px;
+        padding: 0px 5px 0px 30px;
+    }
+    
+    .searchbardesktop i{
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        color:grey;
+    }
+    .searchbardesktop{
+        position: absolute;
+    }
+
+    .secondnav{
+        display: none;
+    }
+
+    .desktopnav{
+  
+    }
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .subnav {
+        float: left;
+        
+        width: 80px;
+        height: 40px;
+        
+        position: relative;
+
+    }
+    .subnav .subnavbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: 'montserrat';
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0px;
+        left: 60px;
+        
+      }
+    .navbar a:hover, .subnav:hover .subnavbtn {
+        border-bottom: 1px solid black;
+
+    }
+    .subnavcontent.first {
+        display: none;
+        top: 40px;
+        left: -130px;
+        width: 900%;
+        height: 40px;
+        position: absolute;
+        z-index: 1;
+        font-family:'raleway';
+        font-size: 13px;
+      }
+    .subnavcontent.second{
+        display: none;
+        top: 40px;
+        left: -230px;
+        width: 200%;
+        height: 40px;
+        position: absolute;
+        z-index: 1;
+      
+        font-family:'raleway';
+        font-size: 13px;
+    }
+    .subnavcontent a {
+        float: left;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-family: inherit;
+        
+    }
+    .subnavcontent a:hover {
+        background-color: #eee;
+        color: black;
+      }
+    .subnav:hover .subnavcontent {
+        display: block;
+    }
+    .background{
+        width: 80%;
+    }
+    p{
+        margin: 10px 80px;
+        font-size: 18px;
+    }
+    .date{
+        margin-left: 78px;
+    }
+    button{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .background{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+    }
+    .slidescontainer.first{
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+    }
+ 
+    .slidescontainer.second{
+        height: 220px;
+    }
+    .slidescontainer.second > div {
+        width: 200px;
+        height: 200px;
+      }
+      .slidescontainer.third{
+        height: 220px;
+        top: 30%;
+    }
+      .slidescontainer.third > div{
+        height: 200px;
+        width: 200px;
+      }
+    .third_slideshow{
+        margin-bottom: 120px;
+        height: 175px;
+    }
+    .third_slideshow h3{
+        margin-left: 300px;
+    }
+    .slidescontainer.fourth{
+        height: 220px;
+        top: 30%;
+    }
+    .slidescontainer.fourth > div {
+        width: 200px;
+        height: 200px;
+      }
+    .fourth_slideshow{
+        margin-bottom: 120px;
+        height: 175px;
+    }
+    .second_slideshow{
+        background-color: #19587D;
+        position: relative;
+        height: 380px;
+    }
+    details{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .baniera_features{
+        display: flex;
+        flex-direction: row;
+    }
 }
