@@ -962,7 +962,7 @@ li{
         margin-left: 78px;
     }
     button{
-        font-size: 18px;
+        font-size: 16px;
     }
     h3{
         font-size: 20px;
@@ -1099,5 +1099,41 @@ li{
     }
     h3.firsttitle{
         margin-bottom: 30px;
+    }
+    .slideprice.second{
+        width: 200px;
+        height: 175px;
+    }
+    .slideprice_background.second{
+        width: 200px;
+        height: 175px;
+        top: 50%;
+        left: 50px;
+    }
+    .slideprice {
+        width: 200px;
+        height: 175px;
+    }
+    .slideprice_background{
+        width: 200px;
+        height: 175px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+    }
+    .slideprice p{
+        font-size: 17px;
+        margin-left: 11px;
+    }
+    .slideprice_background .slideprice .price{
+
+        font-size: 17px;
+    }
+    .slideprice h3{
+        font-size: 20px;
+        margin: 20% 0% 0% 15%;
+    }
+    button.tool{
+        bottom: 0px;
     }
 }
