@@ -185,10 +185,16 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:before,
 header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
   top: 0;
 }
+
+a:link{
+    text-decoration: none;
+}
+}
                                                     /* Slideshow */
 .first_slideshow{
     height: 50vh;
     width: 100%;
+    position: absolute;
 }
 
 .slide.first{
@@ -201,6 +207,79 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     backface-visibility: hidden;
     animation: slideBg 15s linear infinite 4s;
     animation-timing-function: linear;
+    position: relative;
+    z-index: 2;
+}
+.slideprice{
+    background-color: white;
+    width: 140px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    animation: slideprice 15s linear infinite 4s;
+    animation-timing-function: linear;
+}
+.slide.second{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    top:120px;
+    z-index: 1;
+    animation: slidepricesecond 15s linear infinite 4s;
+    animation-timing-function: linear;
+}
+.slideprice.second{
+    background-color: white;
+    width: 140px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    animation: slidepricesecond 15s linear infinite 4s;
+    animation-timing-function: linear;
+}
+.slideprice_background.second{
+    width: 145px;
+    height: 75px;
+    background-color: #FCCA56;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 10px;
+    animation: slidepricesecond 15s linear infinite 4s;
+    animation-timing-function: linear;
+}
+.slideprice_background{
+    width: 145px;
+    height: 75px;
+    background-color: #FCCA56;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 10px;
+    animation: slideprice 15s linear infinite 4s;
+    animation-timing-function: linear;
+}
+.slideprice p{
+    color: black;
+    font-size: 12px;
+    padding-left: 23px;
+    margin: 0px;
+    text-align: left;
+}
+.slideprice_background .slideprice .price{
+    color: #19587D;
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 14px;
+}
+.slideprice h3{
+    color: #19587D;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: left;
 }
 @keyframes slideBg{
     25%{
@@ -213,43 +292,67 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
         background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
     }
 }
+@keyframes slideprice{
+    25%{
+            opacity: 1;
+    }
+    50%{
+            opacity: 0;
+    }   
+}
+@keyframes slidepricesecond{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        z-index: 4;
+    }
+}
 
 
 .blog{
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-color: #19587D;
     margin: 95px 0px;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
    
 }
 .blogimage
 {
     background-image: url('/Images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg');
-    height: 60%;
+    height: 55%;
     width: 100%;
     
     background-repeat: no-repeat;
     background-size: cover;
 }
 .blog article{
-    height: 40%;
+    height: 45%;
     width: 100%;
+}
+.blogarticles{
+    height: 45%;
+    width: 100%;
+}
+.blog article h3{
+    color: white;
+    margin-top: 10px;
 }
 .blog button{
     left: 50%;
     transform: translate(-50%);
     position: absolute;
+    margin-top: 10px;
 }
 .blog article p{
     margin-bottom: 1px;
 }
-.blog article h3{
-    color: white;
-}
+
 .second_slideshow article h3{
     margin-top: 5px;
     color: white;
@@ -263,7 +366,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 95px 0px;
+    margin: 25px 0px 95px;
     position: relative;
 }
 .slider.first .background{
@@ -278,18 +381,20 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .nav:after {
     width: 100%;
     background-color: white;
     position: relative;
-    margin: 150px 0px 0px 0px;
+    
 }
 .slider.first p{
-    color: #19587D;
+    color: black;
     position: absolute;
     margin-left: 35px;
     top: 20%;
+    font-family: 'raleway';
 }
 .slider.first h3{
-    
+    font-family: 'montserrat alternates';
     position: absolute;
     margin-left: 35px;
+    color: #19587D;
 }
 .slidescontainer.first{
     width: 100%;
@@ -636,7 +741,7 @@ button{
     font-family: 'montserrat';
     font-weight: bold;
     color: #343434;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.342);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     left: 50%;
@@ -665,7 +770,7 @@ button{
     height: 50px;
     width: 100%;
     border-top: solid 1px black;
-    border-bottom: solid 1px black;
+
 }
 .back_to_top_button button{
     position: absolute;
@@ -714,6 +819,19 @@ li{
     .searchbardesktop{
         display: none;
     }
+    .footerdesktop{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    article.second{
+        display: none;
+    }
+    button.desktop{
+        display: none;
+    }
 }
 
                                                                 /* Media Query min 768px */
@@ -759,10 +877,6 @@ li{
     .secondnav{
         display: none;
     }
-
-    .desktopnav{
-  
-    }
     .navbar a {
         float: left;
         font-size: 16px;
@@ -802,7 +916,7 @@ li{
     .subnavcontent.first {
         display: none;
         top: 40px;
-        left: -130px;
+        left: -155px;
         width: 900%;
         height: 40px;
         position: absolute;
@@ -814,7 +928,7 @@ li{
         display: none;
         top: 40px;
         left: -230px;
-        width: 200%;
+        width: 300%;
         height: 40px;
         position: absolute;
         z-index: 1;
@@ -842,7 +956,7 @@ li{
     }
     p{
         margin: 10px 80px;
-        font-size: 18px;
+        font-size: 15px;
     }
     .date{
         margin-left: 78px;
@@ -905,6 +1019,9 @@ li{
         margin-bottom: 120px;
         height: 175px;
     }
+    .fourth_slideshow h3{
+        margin-left: 270px;
+    }
     .second_slideshow{
         background-color: #19587D;
         position: relative;
@@ -916,9 +1033,71 @@ li{
     footer{
         display: flex;
         flex-direction: row;
+        position: relative;
+    }
+    footer h3{
+        margin: 20px 10px 0px 10px;
+        text-align: left;
+        color: white;
     }
     .baniera_features{
         display: flex;
         flex-direction: row;
+    }
+    .back_to_top_button{
+        width: 150px;
+        border: none;
+        right: 0px;
+        position: absolute;
+    }
+    article ul li{
+        color: white;
+        padding-bottom: 20px;
+        font-family: 'raleway';
+        font-size: 15px;
+    }
+    article{
+        margin-right: 20px;
+    }
+    .services{
+        margin-left: 20px;
+    }
+    a:visited{
+        outline: none;
+        color: #343434;
+    }
+    .baniera_storytelling{
+        margin-bottom: 30px;
+    }
+    .blog{
+        display: flex;
+        flex-direction: ;
+        flex-wrap: nowrap;
+    }
+    .blog article{
+        height: 100%;
+        width: 100%;
+        margin: 30px 0px;
+    }
+    .blogimage{
+        height: 100%;
+        width: 55%;
+    }
+    .blogarticles{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin: 0px;
+        width: 45%;
+    }
+    article p{
+        margin: 5% 10%;
+    }
+    button.mobile{
+        display: none;
+    }
+    h3.firsttitle{
+        margin-bottom: 30px;
     }
 }

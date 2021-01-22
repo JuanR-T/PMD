@@ -29,9 +29,7 @@
                                 <a href="#wc/bidet">WC/Bidet</a>
                                 <a href="#mirroirs">Mirroirs</a>
                                 <a href="#lavabo">Lavabo</a>
-                                <a href="#robinet">Robinet</a>
-                                <a href="#accessoires">Accessoires</a>
-                                <a href="#radiateur">Radiateur</a>   
+                                <a href="#accessoires">Accessoires</a>  
                             </div>
                         </div>
                         <div class="subnav">
@@ -67,7 +65,6 @@
                                     <li><a href="#lavabo">Lavabo</a></li>
                                     <li><a href="#robinet">Robinet</a></li>
                                     <li><a href="#accessoires">Accessoires</a></li>
-                                    <li><a href="#radiateur">Radiateur</a></li>
                                     <li><a href="#revetements">Revêtements</a></li>        
                                     <li><a href="#idéesinspirations">Idées et inspirations</a></li>
                                     <li><a href="#blog">Blog</a>
@@ -84,8 +81,24 @@
 
             <section class="first_slideshow">
                 <a id="top"></a>
-                <div class="slide first"></div>
-                <div class="slide second"></div>
+                <div class="slide first">
+                    <div class="slideprice_background">
+                        <div class="slideprice">
+                            <h3>Ensemble de douche</h3>
+                            <p>N°714894</p>
+                            <p class="price">379,99 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide second">
+                    <div class="slideprice_background second">
+                        <div class="slideprice second">
+                            <h3>Baignoire incurvée</h3>
+                            <p>N°7148877</p>
+                            <p class="price">179,99 €</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="slider first">
@@ -133,14 +146,23 @@
 
             <section class="blog">
                 <div class="blogimage"></div>
-                <article>
-                    <p class="date">08/01/2021</p>
-                    <hr id="divider" class="solid"></hr>
-                    <h3>Comment installer une colonne de douche ?</h3>
-                    <p>Vous désirez installer une colonne de douche ? Rien de plus simple, c’est facile à installer même sans notice. Nous allons vous expliquer toutes les étapes nécessaires à cette opération...</p>
-                    <button>Visitez notre blog !</button>
-                </article>
-                
+                <div class="blogarticles">
+                    <article>
+                        <h3 class="firsttitle">Créons ensemble</h3>
+                        <p class="date">08/01/2021</p>
+                        <hr id="divider" class="solid"></hr>
+                        <h3>Comment installer une colonne de douche ?</h3>
+                        <p>Vous désirez installer une colonne de douche ? Rien de plus simple, c’est facile à installer même sans notice. Nous allons vous expliquer toutes les étapes nécessaires à cette opération...</p>
+                        <button class="mobile">Visitez notre blog !</button>
+                    </article>
+                    <article class="second">
+                        <p class="date">11/01/2021</p>
+                        <hr id="divider" class="solid"></hr>
+                        <h3>Comment installer une colonne de douche à l'Italienne ?</h3>
+                        <p>Nous allons vous expliquer pas à pas comment remplacer votre baignoire par une douche à l'italienne : comment vérifier que votre projet est réalisable et comment procéder étape par étape...</p>
+                        <button class="desktop">Visitez notre blog !</button>
+                    </article>
+                </div>
             </section>
 
             <section class="fourth_slideshow">
@@ -164,7 +186,7 @@
             <footer>
                 <section class="baniera_features">
 
-                    <article id="services">
+                    <article class="services">
                         <details>
                             <summary>Services</summary>
                             <ul>
@@ -174,16 +196,18 @@
                                 <li>Livraison</li>   
                             </ul>
                         </details>
-                        <h3>Services</h3>
-                        <ul>
-                            <li>Espace pro</li>
-                            <li>Financement</li>
-                            <li>Disponibilité</li>
-                            <li>Livraison</li>
-                        </ul>
+                        <div class="footerdesktop">
+                            <h3>Services</h3>
+                            <ul>
+                                <li>Espace pro</li>
+                                <li>Financement</li>
+                                <li>Disponibilité</li>
+                                <li>Livraison</li>
+                            </ul>
+                        </div>
                     </article>
 
-                    <article id="need_help">
+                    <article class="need_help">
                         <details>
                             <summary>Besoin d'aide</summary>
                             <ul>
@@ -193,16 +217,18 @@
                                 <li>Suivi de commande</li>   
                             </ul>
                         </details>
-                    <h3>Besoin d'aide</h3>
-                    <ul>
-                        <li>Nous contacter</li>
-                        <li>Outil 3D</li>
-                        <li>F.A.Q</li>
-                        <li>Suivi de commande</li>
-                    </ul>
+                    <div class="footerdesktop">
+                        <h3>Besoin d'aide</h3>
+                        <ul>
+                            <li>Nous contacter</li>
+                            <li>Outil 3D</li>
+                            <li>F.A.Q</li>
+                            <li>Suivi de commande</li>
+                        </ul>
+                    </div>
                     </article>
 
-                    <article id="miscellaneous">
+                    <article class="miscellaneous">
                         <details>
                             <summary>Baniera</summary>
                             <ul>
@@ -212,13 +238,15 @@
                                 <li>Travailler chez Baniera</li>   
                             </ul>
                         </details>
-                    <h3>Baniera</h3>
-                    <ul>
-                        <li>Notre histoire</li>
-                        <li>Mentions légales</li>
-                        <li>Blog</li>
-                        <li>Travailler chez Baniera</li>
-                    </ul>
+                    <div class="footerdesktop">
+                        <h3>Baniera</h3>
+                        <ul>
+                            <li>Notre histoire</li>
+                            <li>Mentions légales</li>
+                            <li>Blog</li>
+                            <li>Travailler chez Baniera</li>
+                        </ul>
+                    </div>
                     </article>
 
                     <article id="social_networks">
