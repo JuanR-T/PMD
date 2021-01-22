@@ -1,10 +1,10 @@
 @font-face{
     font-family: 'montserrat';
-    src: url('https://fonts.google.com/specimen/Montserrat?query=montse') format('truetype');
+    src: url('../PMD/Polices/montserrat') format('truetype');
 }
 @font-face{
     font-family: 'raleway';
-    src: url('https://fonts.google.com/specimen/Raleway?query=rale') format('truetype');
+    src: url('../PMD/Polices/raleway') format('truetype');
 }
 
 * {
@@ -820,10 +820,11 @@ li{
         flex-direction: row;
     }
     .searchbardesktop{
-        height: 20px;
+        height: 30px;
         width: 30%;
-        right: 20%;
-        top: 15%;
+        
+        left: 39%;
+        top: 0%;
         position: absolute;
     }
     .searchbardesktop input{
@@ -898,7 +899,7 @@ li{
         position: absolute;
         z-index: 1;
         font-family:'raleway';
-        font-size: 13px;
+        font-size: 14px;
       }
     .subnavcontent.second{
         display: none;
@@ -908,6 +909,7 @@ li{
         height: 40px;
         position: absolute;
         z-index: 1;
+        font-size: 14px;
       
         font-family:'raleway';
         font-size: 13px;
@@ -1039,7 +1041,7 @@ li{
     }
     a:visited{
         outline: none;
-        color: #343434;
+        
     }
     .baniera_storytelling{
         margin-bottom: 30px;
