@@ -396,19 +396,7 @@ a:link{
     margin-left: 35px;
     color: #19587D;
 }
-.slidescontainer.first{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 .slidescontainer::-webkit-scrollbar {
     width:  2px;
@@ -509,19 +497,7 @@ a:link{
                                                                     /* Slider second */
 
 
-.slidescontainer.second{
-    width: 100%;
-    height: 21vh;
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    right: 0px;
-    bottom: 10px;
-    position: absolute;
-}
+
 
 .second_slideshow{
     background-color: #19587D;
@@ -978,10 +954,9 @@ li{
         position: relative;
     }
     .slidescontainer.first{
-        width: 90%;
+        width: 80%;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        
         top: 10%;
     }
  
@@ -1135,5 +1110,137 @@ li{
     }
     button.tool{
         bottom: 0px;
+    }
+}
+
+@media (max-width:1024px){
+
+    .slidescontainer.first{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .slidescontainer.second{
+        width: 100%;
+        height: 21vh;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        right: 0px;
+        bottom: 10px;
+        position: absolute;
+    }
+}
+
+                                                    /* Media query 1024px */
+@media (min-width:1024px){
+    .slidescontainer.first{
+        width: 95%;
+        margin-left: 17px;
+        margin-top: -50px;  
+    }
+    .slider.first{
+        height: 100vh;
+    }
+    .slidescontainer.second{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 35%;
+        position: absolute;
+        top: 20%;
+    }
+    .slidescontainer.second > div {
+        width: 47%;
+        height: 100%;
+        margin: 10px 10px;
+    }
+    .second_slideshow{
+        height: 100vh;
+    }
+    .slidescontainer.first > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        color: #ffeead;
+    }
+    
+    .slidescontainer.first > div{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.692);
+    }
+    
+    /* Grid */
+    .slidescontainer.first {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 75% 25%;
+        grid-auto-rows: 88px;
+            grid-auto-flow: dense; /* Fill all spaces with fitted images */
+    }
+    
+    .slides.first.first {
+        grid-column: span 1;
+        grid-row: span 4;
+    }
+    .slides.second {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .slides.third {
+        grid-row: span 6;
+        grid-column: span 1
+    }
+    
+    .slides.fourth {
+        grid-column: span 1;
+        grid-row: span 4;
+    }
+    article p{
+        margin: 30px 120px 50px;
+        font-size: 17px;
+    }
+    button.tool{
+        width: 200px;
+    }
+    .third_slideshow h3{
+        left: 18%;
+    }
+    .slidescontainer.third{
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%);
+    }
+    .blog p {
+        margin: 15px 30px;
+    }
+    .fourth_slideshow h3{
+        left: 15%;
+    }
+    .slidescontainer.fourth{
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%);
+    }
+    .baniera_storytelling P{
+        font-size: 17px;
+        margin: 30px 120px;
     }
 }
