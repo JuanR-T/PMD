@@ -7,10 +7,54 @@
     src: url('../PMD/Polices/raleway') format('truetype');
 }
 
+@keyframes slideBg{
+    25%{
+        background-image: url('/Images/pexels-victoria-borodinova-3315291.jpg');
+    }
+    50%{
+        background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
+    }
+    90%{
+        background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
+    }
+}
+@keyframes slideprice{
+    25%{
+            opacity: 1;
+    }
+    50%{
+            opacity: 0;
+    }   
+}
+@keyframes slidepricesecond{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        z-index: 4;
+    }
+}
+@keyframes title{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 svg{
     display: none;
 }
-  .icon {
+.icon {
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -19,8 +63,8 @@ svg{
     stroke: currentColor;
     fill: currentColor;
     color: white;
-  }
-  .icon-search {
+}
+.icon-search {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -29,26 +73,19 @@ svg{
     stroke: currentColor;
     fill: currentColor;
     color: rgb(100, 98, 98);
-  }
-  .icon-location {
+}
+.icon-location {
     display: inline-block;
     width: 45px;
     height: 25px;
     stroke-width: 0;
     color: rgb(75, 74, 74);
-  }
+}
 .icon-facebook, .icon-instagram, .icon-twitter, .icon-pinterest, .icon-youtube{
     color: black;
     position: absolute;
     left: 23%;
-  }
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    
-  }
+}
 
 h1{
     color:white;
@@ -241,7 +278,7 @@ a:link{
     text-decoration: none;
 }
 }
-                                                    /* Slideshow */
+                                                    /* First Slideshow */
 .first_slideshow{
     height: 50vh;
     width: 100%;
@@ -332,35 +369,6 @@ a:link{
     padding: 2px;
     text-align: left;
 }
-@keyframes slideBg{
-    25%{
-        background-image: url('/Images/pexels-victoria-borodinova-3315291.jpg');
-    }
-    50%{
-        background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
-    }
-    90%{
-        background-image: url('/Images/chastity-cortijo-6TY_WrJTwSI-unsplash.jpg');
-    }
-}
-@keyframes slideprice{
-    25%{
-            opacity: 1;
-    }
-    50%{
-            opacity: 0;
-    }   
-}
-@keyframes slidepricesecond{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-        z-index: 4;
-    }
-}
-
 
 .blog{
     height: 600px;
@@ -373,6 +381,8 @@ a:link{
     flex-wrap: wrap;
    
 }
+
+                                                                                  /* Blog */
 .blogimage
 {
     background-image: url('/Images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg');
@@ -410,7 +420,7 @@ a:link{
 }
 
 
-                                                        /* First slider */
+                                                                                         /* First slider */
 .slider.first{
     width: 100%;
     height: 80vh;
@@ -447,8 +457,7 @@ a:link{
     margin-left: 35px;
     color: #19587D;
 }
-
-
+                                                                                     /* Slider First */
 .slidescontainer::-webkit-scrollbar {
     width:  2px;
     height: 5px;
@@ -461,50 +470,22 @@ a:link{
     background: transparent;
   }
 
-  .slidescontainer.first > div {
+.slidescontainer.first > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 100%;
     height: 100%;
     margin: 0px 10px;
     border-radius: 10px;
-
     transform-origin: left;
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-  
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;
-  }
-  
-  .slidescontainer.third > div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 150px;
-    height: 150px;
-    margin: 0px 10px;
-    border-radius: 10px;
-    transform-origin: left;
-    transform: scale(1);
-    transition: transform 0.5s;
- 
-  }
-.slidescontainer.fourth > div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 150px;
-    height: 150px;
-    margin: 0px 10px;
-    border-radius: 10px;
-    transform-origin: left;
-    transform: scale(1);
-    transition: transform 0.5s;
-    
 }
-
 .slidefirst
  {
     background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
@@ -533,7 +514,7 @@ a:link{
     object-fit: cover;
     background-position: center;
  }
-                                                                    /* Slider second */
+                                                                                        /* Slider second */
 
 
 
@@ -585,7 +566,7 @@ a:link{
     background-position: center;
  }
  
-                                                                /* Slider third */
+                                                                                        /* Slider third */
 
 .slidescontainer.third{
     width: 880px;
@@ -599,7 +580,18 @@ a:link{
     position: absolute;
     bottom: -80px;
     right: 0px;
-}   
+}
+.slidescontainer.third > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    transform-origin: left;
+    transform: scale(1);
+    transition: transform 0.5s;
+} 
 .third_slideshow{
     height: 150px;
     width: 100%;
@@ -642,35 +634,50 @@ a:link{
     background-position: center;
  }
  
-                                                                    /* Slider fourth */
+                                                                                             /* Slider fourth */
                                                                     
-                                                                    
-    .fourth_slideshow{
-        height: 150px;
-        width: 100%;
-        background-color: #FCCA56;
-        margin: 95px 0px;
-        position: relative;
-    }
-    .fourth_slideshow h3{
-        position: absolute;
-        top: 20px;
-        margin-left: 40px;
-        color: #343434;
-    }
-    .slidescontainer.fourth{
-      width: 870px;
-      height: 21vh;
-      display: flex;
-      align-items: center;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-      bottom: -80px;
-      right: 0px;
-      position: absolute;
-    }   
+.slidescontainer.fourth{
+   width: 870px;
+   height: 21vh;
+   display: flex;
+   align-items: center;
+   overflow-x: scroll;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+   bottom: -80px;
+   right: 0px;
+   position: absolute;
+}
+.slidescontainer.fourth > div {
+   scroll-snap-align: start;
+   flex-shrink: 0;
+   width: 150px;
+   height: 150px;
+   margin: 0px 10px;
+   border-radius: 10px;
+   transform-origin: left;
+   transform: scale(1);
+   transition: transform 0.5s;  
+}                                                               
+.fourth_slideshow{
+   height: 150px;
+   width: 100%;
+   background-color: #FCCA56;
+   margin: 95px 0px;
+   position: relative;
+}
+.fourth_slideshow h3{
+   position: absolute;
+   top: 20px;
+   margin-left: 40px;
+   color: #343434;
+}
+p.city{
+    font-family: 'raleway';
+    font-weight: bold;
+    text-align: center;
+}   
 .slidethirteenth
    {
       background-image: url('/Images/paris.webp');
@@ -712,18 +719,6 @@ h2{
     animation-name: title;
     animation-delay: 0s;
     animation-duration: 6s;
-}
-
-@keyframes title{
-    0%{
-        opacity: 0;
-        transform: translateY(-20px)
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 h3{
@@ -859,7 +854,7 @@ li{
     }
 }
 
-                                                                /* Media Query min 768px */
+                                                                                    /* Media Query min 768px */
 @media (min-width:768px){
     header{
         display: flex;
@@ -1124,9 +1119,7 @@ li{
     button.mobile{
         display: none;
     }
-    h3.firsttitle{
-        margin-bottom: 30px;
-    }
+  
     .slideprice.second{
         width: 200px;
         height: 175px;
@@ -1166,7 +1159,7 @@ li{
         bottom: 0px;
     }
 }
-
+                                                                                                    /* Max width 1024px */
 @media (max-width:1024px){
 
     .slidescontainer.first{
@@ -1196,13 +1189,16 @@ li{
         bottom: 10px;
         position: absolute;
     }
+    .slidescontainer.third,.slidescontainer.fourth{
+        width: 100%;
+    }
     p.pro,p.tool{
         display: none;
     }
 }
 
 
-                                                    /* Media query 1024px */
+                                                                                                /* Media query 1024px */
 @media (min-width:1024px){
     .slidescontainer.first{
         width: 95%;
@@ -1244,14 +1240,13 @@ li{
         object-fit: cover;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.692);
     }
-    
-    /* Grid */
+
     .slidescontainer.first {
         display: grid;
         grid-gap: 15px;
         grid-template-columns: 75% 25%;
         grid-auto-rows: 88px;
-            grid-auto-flow: dense; /* Fill all spaces with fitted images */
+            grid-auto-flow: dense;
     }
     
     .slidefirst {
@@ -1302,7 +1297,7 @@ li{
         margin: 30px 120px;
     }
 }
-
+                                                                                                    /* Min width 1439 px */
 @media (min-width: 1439px){
     .slidescontainer.third{
         left: 50%;
@@ -1333,7 +1328,7 @@ li{
         right: -600px;
     }
 }
-
+                                                                                                        /* Min width 1919px */
 @media (min-width:1919px){
     .slider_first{
         height: 110vh;
@@ -1372,5 +1367,4 @@ li{
     .social_networks{
         right: -1100px;
     }
-   
 }
