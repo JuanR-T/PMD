@@ -6,6 +6,41 @@
     font-family: 'raleway';
     src: url('../PMD/Polices/raleway') format('truetype');
 }
+svg{
+    display: none;
+}
+  .icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    stroke-width: 0;
+    padding-right: 20px;
+    stroke: currentColor;
+    fill: currentColor;
+    color: white;
+  }
+  .icon-search {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    stroke-width: 0;
+    padding-right: 20px;
+    stroke: currentColor;
+    fill: currentColor;
+    color: rgb(100, 98, 98);
+  }
+  .icon-location {
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    stroke-width: 0;
+    color: rgb(75, 74, 74);
+  }
+.icon-facebook, .icon-instagram, .icon-twitter, .icon-pinterest, .icon-youtube{
+    color: black;
+    position: absolute;
+    left: 23%;
+  }
 
 * {
     margin: 0px;
@@ -22,17 +57,31 @@ h1{
 header{
     display: flex;
     flex-direction: column;
-    height: 120px;
+    height: 80px;
     position: relative;
     background-color: #19587D;
-    padding: 20px 35px;
+    padding-top: 5px;
+    
+}
+p.pro, p.tool{
+    
+    font-family: 'montserrat';
+    font-weight: bold;
+    position: absolute;;
+    
+}
+p.tool{
+    right: 70px;
+}
+p.pro{
+    right: 150px;
 }
 .icons{
     color: white;
     position: absolute;
     right: 0px;
     display: flex;
-    top: 10px;
+    top: -8px;
 }
 .icons i{
     padding: 0px 10px;
@@ -64,16 +113,16 @@ header{
     outline: none;
     border: none;
     font-family: 'raleway';
-    font-size: 17px;
+    font-size: 14px;
     padding: 0px 5px 0px 30px;
 }
-
-.searchbar i{
+.searchicon{
     position: absolute;
-    left: 5%;
-    top: 20%;
-    color:grey;
+    left: 10px;
+    top: -5px;
+    
 }
+
 .searchbar{
     position: absolute;
     width: 75%;
@@ -88,11 +137,11 @@ header{
 }
 header ul 
 {
-    margin: 60px 0px 0px 0px;
+    margin: 35px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     list-style: none;
-    top: 0px;
-    z-index: 0;
+    top: -14px;
+    z-index: 5;
     position: absolute;
     width: 100%;
     height:800px;
@@ -244,7 +293,7 @@ a:link{
     height: 75px;
     background-color: #FCCA56;
     position: absolute;
-    top: 30px;
+    top: -10px;
     left: 30px;
     border-radius: 10px;
     animation: slidepricesecond 15s linear infinite 4s;
@@ -436,16 +485,10 @@ a:link{
     height: 150px;
     margin: 0px 10px;
     border-radius: 10px;
-    background: #eee;
     transform-origin: left;
     transform: scale(1);
     transition: transform 0.5s;
-    position: relative;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
+ 
   }
 .slidescontainer.fourth > div {
     scroll-snap-align: start;
@@ -454,40 +497,34 @@ a:link{
     height: 150px;
     margin: 0px 10px;
     border-radius: 10px;
-    background: #eee;
     transform-origin: left;
     transform: scale(1);
     transition: transform 0.5s;
-    position: relative;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
+    
 }
 
-.slides.first.first
+.slidefirst
  {
     background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
     background-size: cover;
     background-position: center;
     object-fit: cover;
  }
- .slides.second
+ .slidesecond
  {
     background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.third
+ .slidethird
  {
     background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.fourth
+ .slidefourth
  {
     background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
     background-size: cover;
@@ -515,38 +552,32 @@ a:link{
     transform-origin: left;
     transform: scale(1);
     transition: transform 0.5s;
-    position: relative;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
   }
 
-.slides.second.first
+.slidefifth
  {
-    background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
+    background-image: url('/Images/pexels-maria-orlova-4940786.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.second.second
+ .slidesixth
  {
-    background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
+    background-image: url('/Images/pexels-jean-van-der-meulen-1457847.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.second.third
+ .slideseventh
  {
-    background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
+    background-image:url('/Images/pexels-max-vakhtbovych-6058447.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.second.fourth
+ .slideight
  {
-    background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
+    background-image:url('/Images/pexels-jonathan-borba-3101547.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -580,30 +611,30 @@ a:link{
     margin-left: 70px;
     color: #343434;
 }
-.slides.third.first
+.slideninth
  {
-    background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
+    background-image: url('/Images/claus-grunstaudl-I72dFJRFT3k-unsplash.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.third.second
+ .slidetenth
  {
-    background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
+    background-image: url('/Images/lisa-moyneur-yAlH5qA7qk0-unsplash.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.third.third
+ .slideleventh
  {
-    background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
+    background-image: url('/Images/paseidon72-a1LFLqvp_7c-unsplash.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
  }
- .slides.third.fourth
+ .slidetwelfth
  {
-    background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
+    background-image:url('/Images/phil-hearing-U7PitHRnTNU-unsplash.webp');
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -638,30 +669,30 @@ a:link{
       right: 0px;
       position: absolute;
     }   
-.slides.fourth.first
+.slidethirteenth
    {
-      background-image: url('/Images/r-architecture-HQCW1gTMjek-unsplash.jpg');
+      background-image: url('/Images/paris.webp');
       background-size: cover;
       object-fit: cover;
       background-position: center;
    }
-.slides.fourth.second
+.slidefourteenth
    {
-      background-image: url('/Images/jared-rice-PibraWHb4h8-unsplash.jpg');
+      background-image: url('/Images/marseille.webp');
       background-size: cover;
       object-fit: cover;
       background-position: center;
    }
-.slides.fourth.third
+.slidefifteenth
 {
-      background-image: url('/Images/bence-balla-schottner-VCKYuQ6R-28-unsplash.jpg');
+      background-image: url('/Images/bordeaux.webp');
       background-size: cover;
       object-fit: cover;
       background-position: center;
 }
-.slides.fourth.fourth
+.slidesixteenth
    {
-      background-image: url('/Images/andrea-davis-k8TlRnE61dw-unsplash.jpg');
+      background-image: url('/Images/nice.webp');
       background-size: cover;
       object-fit: cover;
       background-position: center;
@@ -778,6 +809,21 @@ details[open] {
     padding: .5em;
     color: white;
 }
+.social_networks{
+    display: flex;
+    position: relative;
+    right: 0px;
+}
+.SN{
+    background-color: rgb(255, 255, 255);
+    border-radius: 400px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    margin-right: 10px;
+}
 
 ul{
     list-style-type: none;
@@ -785,6 +831,7 @@ ul{
 li{
     padding: 10px;
     font-family: 'montserrat';
+    text-align: jus;
 }
 
 
@@ -1024,8 +1071,13 @@ li{
     .back_to_top_button{
         width: 150px;
         border: none;
-        right: 0px;
+        right: 10px;
         position: absolute;
+    }
+    .social_networks{
+        top: 180px;
+        right: 0px;
+        height: 50px;
     }
     article ul li{
         color: white;
@@ -1146,6 +1198,12 @@ li{
     }
 }
 
+@media(max-width:1024px){
+    p.pro,p.tool{
+        display: none;
+    }
+ }
+
                                                     /* Media query 1024px */
 @media (min-width:1024px){
     .slidescontainer.first{
@@ -1198,20 +1256,20 @@ li{
             grid-auto-flow: dense; /* Fill all spaces with fitted images */
     }
     
-    .slides.first.first {
+    .slidefirst {
         grid-column: span 1;
         grid-row: span 4;
     }
-    .slides.second {
+    .slidesecond{
         grid-column: span 1;
         grid-row: span 2;
     }
-    .slides.third {
+    .slidethird{
         grid-row: span 6;
         grid-column: span 1
     }
     
-    .slides.fourth {
+    .slidefourth {
         grid-column: span 1;
         grid-row: span 4;
     }
