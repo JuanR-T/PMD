@@ -6,6 +6,7 @@
     font-family: 'raleway';
     src: url('../PMD/Polices/raleway') format('truetype');
 }
+
 svg{
     display: none;
 }
@@ -46,6 +47,7 @@ svg{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
   }
 
 h1{
@@ -586,7 +588,7 @@ a:link{
                                                                 /* Slider third */
 
 .slidescontainer.third{
-    width: 90%;
+    width: 880px;
     height: 21vh;
     display: flex;
     align-items: center;
@@ -657,7 +659,7 @@ a:link{
         color: #343434;
     }
     .slidescontainer.fourth{
-      width: 90%;
+      width: 870px;
       height: 21vh;
       display: flex;
       align-items: center;
@@ -944,7 +946,6 @@ li{
         width: 900%;
         height: 40px;
         position: absolute;
-        z-index: 1;
         font-family:'raleway';
         font-size: 14px;
       }
@@ -955,11 +956,8 @@ li{
         width: 300%;
         height: 40px;
         position: absolute;
-        z-index: 1;
         font-size: 14px;
-      
         font-family:'raleway';
-        font-size: 13px;
     }
     .subnavcontent a {
         float: left;
@@ -1137,6 +1135,8 @@ li{
         width: 200px;
         height: 175px;
         top: 50%;
+        transform: translateY(-50%);
+        top: 50%;
         left: 50px;
     }
     .slideprice {
@@ -1196,13 +1196,11 @@ li{
         bottom: 10px;
         position: absolute;
     }
-}
-
-@media(max-width:1024px){
     p.pro,p.tool{
         display: none;
     }
- }
+}
+
 
                                                     /* Media query 1024px */
 @media (min-width:1024px){
@@ -1285,7 +1283,7 @@ li{
     }
     .slidescontainer.third{
         position: absolute;
-        left: 60%;
+        left: 50%;
         transform: translateX(-50%);
     }
     .blog p {
@@ -1303,4 +1301,76 @@ li{
         font-size: 17px;
         margin: 30px 120px;
     }
+}
+
+@media (min-width: 1439px){
+    .slidescontainer.third{
+        left: 50%;
+    }
+    .third_slideshow h3{
+        left: 21%;
+    }
+    article p{
+        margin: 50px 387px;
+    }
+    .blog article{
+        padding: 0px 80px;
+    }
+    .slideprice_background.second{
+        top: 45%;
+        transform: translateY(-50%);
+    }
+    .slidescontainer.fourth{
+        left: 50%;
+    }
+    .fourth_slideshow h3{
+        left: 23%;
+    }
+    .baniera_storytelling p{
+        margin: 30px 325px 30px 310px;
+    }
+    .social_networks{
+        right: -600px;
+    }
+}
+
+@media (min-width:1919px){
+    .slider_first{
+        height: 110vh;
+    }
+    header{
+        padding:10px 20px;
+    }
+    .firstnav{
+        padding:0px 0px;
+    }
+    p.pro{
+        position: absolute;
+        right: 310px;
+    }
+    p.tool{
+        right: 150px;
+    }
+    .searchbardesktop{
+        top: 5px;
+    }
+    article p{
+        margin: 50px 520px;
+    }
+    .third_slideshow h3 {
+        left: 29%;
+    }
+    .blog article {
+        padding: 0px 130px;
+    }
+    .fourth_slideshow h3 {
+        left: 29%;
+    }
+    .baniera_storytelling p {
+        margin: 30px 520px 30px 540px;
+    }
+    .social_networks{
+        right: -1100px;
+    }
+   
 }
